@@ -13,7 +13,7 @@ const stringifyJSON = function(obj) {
     return '' + obj;
   }
 
-  // Check if object is an array  
+  // Check if input is an array
   if (Array.isArray(obj)) { 
     if (obj.length === 0) { 
       return '[]'; 
@@ -25,7 +25,7 @@ const stringifyJSON = function(obj) {
     }
   }
   
-  /***Check if obj is an Object***/ 
+  // Check f input is an object type 
   if (typeof obj === 'object' && !Array.isArray(obj)) { 
 
     let listOfKeys = Object.keys(obj);
